@@ -40,7 +40,7 @@ jobs:
 
       # Step 6: Upload the Build Artifact (Optional: Save the build for future jobs)
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: react-build
           path: build/
