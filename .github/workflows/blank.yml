@@ -1,0 +1,47 @@
+name: React Auto CI
+
+# Trigger the workflow on any push or pull request to any branch
+on:
+  push:
+    branches:
+      - "**"  # Triggers on any branch
+  pull_request:
+    branches:
+      - "**"  # Triggers on PRs to any branch
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+jobs:
+  build:
+    name: Build and Test React App
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the project code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18  # Specify your Node.js version
+
+      # Step 3: Install project dependencies
+      - name: Install Dependencies
+        run: npm install
+
+      # Step 4: Run Tests (Ensure your React tests are working)
+      - name: Run Tests
+        run: npm test
+
+      # Step 5: Build the React app
+      - name: Build the Project
+        run: npm run build
+
+      # Step 6: Upload the Build Artifact (Optional: Save the build for future jobs)
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: react-build
+          path: build/
+
