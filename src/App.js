@@ -249,7 +249,7 @@ const LandingPage = () => {
               color="inherit"
               style={{ flexGrow: 1, color: "#0C134F", fontWeight: "700" }}
             >
-              Technust Technologies
+              Murshad Technologies
             </Typography>
             <button
               style={{
