@@ -249,7 +249,7 @@ const LandingPage = () => {
               color="inherit"
               style={{ flexGrow: 1, color: "#0C134F", fontWeight: "700" }}
             >
-              Murshad Technologies
+              DevOps Tools Documentation by HASSAN SHAH
             </Typography>
             <button
               style={{
