@@ -266,7 +266,7 @@ const LandingPage = () => {
         </AppBar>
         <div className={classes.image}>
           <Grid container spacing={2}>
-            <Grid item xs={16} sm={6}>
+            <Grid item xs={12} sm={6}>
               <Paper className={classes.paper}>
                 <Grid container spacing={2} alignItems="center">
                   <Typography
