@@ -343,7 +343,7 @@ const LandingPage = () => {
                 </Grid>
               </Paper>
             </Grid>
-            <Grid item xs={16} sm={6}>
+            <Grid item xs={12} sm={6}>
               <div className={classes.image2} />
             </Grid>
           </Grid>
