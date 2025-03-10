@@ -660,7 +660,7 @@ const LandingPage = () => {
             fontWeight: "700",
           }}
         >
-          Technust Technologies
+          DevOps Tools Documentation by HASSAN SHAH
         </Typography>
         <button
           style={{
